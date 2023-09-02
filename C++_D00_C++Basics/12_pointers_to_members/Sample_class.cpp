@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sample.class.cpp                                   :+:      :+:    :+:   */
+/*   Sample_class.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 11:48:24 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/01 23:04:10 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/09/02 14:26:11 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/09/02 14:29:03 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "sample.class.hpp"
+#include "Sample_class.hpp"
 
-Sample::Sample(void) {
+Sample::Sample(void) : foo(0) {
 
     std::cout << "Constructor called" << std::endl;
     return;
@@ -22,5 +22,11 @@ Sample::Sample(void) {
 Sample::~Sample(void) {
 
     std::cout << "Destructor called" << std::endl;
+    return;
+}
+
+void    Sample::bar(void) const {
+
+    std::cout << "Member Function bar called" << std::endl;
     return;
 }

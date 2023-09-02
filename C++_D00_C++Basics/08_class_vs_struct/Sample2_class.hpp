@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sample.class.cpp                                   :+:      :+:    :+:   */
+/*   Sample2_class.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 11:48:24 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/01 23:04:10 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/09/01 22:38:59 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/09/01 23:08:39 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "sample.class.hpp"
+#ifndef SAMPLE2_CLASS_HPP
+# define SAMPLE2_CLASS_HPP
 
-Sample::Sample(void) {
+class Sample2{
+	public: // default is private
+		int		foo;
 
-    std::cout << "Constructor called" << std::endl;
-    return;
-}
+		Sample2(void);
+		~Sample2(void);
 
-Sample::~Sample(void) {
+		void	bar(void) const;
+};
 
-    std::cout << "Destructor called" << std::endl;
-    return;
-}
+#endif

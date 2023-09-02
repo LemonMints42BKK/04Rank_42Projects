@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sample.class.cpp                                   :+:      :+:    :+:   */
+/*   Sample_class.hpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 11:48:24 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/01 23:04:10 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/09/02 13:40:01 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/09/02 13:41:42 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "sample.class.hpp"
+#ifndef SAMPLE_CLASS_HPP
+# define SAMPLE_CLASS_HPP
 
-Sample::Sample(void) {
+class Sample{
+    public:
 
-    std::cout << "Constructor called" << std::endl;
-    return;
-}
+        Sample(void);
+        ~Sample(void);
 
-Sample::~Sample(void) {
+        static int		getNbInst(void);
 
-    std::cout << "Destructor called" << std::endl;
-    return;
-}
+    private:
+
+        static int		_nbInst;
+};
+#endif

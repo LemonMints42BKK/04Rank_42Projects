@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sample.class.cpp                                   :+:      :+:    :+:   */
+/*   Sample1_sturct.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 11:48:24 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/01 23:04:10 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/09/01 22:44:07 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/09/01 22:55:16 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "sample.class.hpp"
+#ifndef SAMPLE1_STURCT_HPP
+# define SAMPLE1_STURCT_HPP
 
-Sample::Sample(void) {
+struct Sample1
+{
+	int		foo;
 
-    std::cout << "Constructor called" << std::endl;
-    return;
-}
+	Sample1( void );
+	~Sample1( void );
 
-Sample::~Sample(void) {
+	void	bar(void) const;
+};
 
-    std::cout << "Destructor called" << std::endl;
-    return;
-}
+#endif

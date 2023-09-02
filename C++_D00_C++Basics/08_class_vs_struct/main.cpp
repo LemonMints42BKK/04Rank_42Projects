@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sample.class.cpp                                   :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 11:48:24 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/01 23:04:10 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/09/01 22:49:18 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/09/01 23:07:26 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "sample.class.hpp"
+#include "Sample1_sturct.hpp"
+#include "Sample2_class.hpp"
 
-Sample::Sample(void) {
+int	main(void)
+{
+	Sample1	instance1;
+	Sample2	instance2;
 
-    std::cout << "Constructor called" << std::endl;
-    return;
-}
-
-Sample::~Sample(void) {
-
-    std::cout << "Destructor called" << std::endl;
-    return;
+	return (0);
 }
