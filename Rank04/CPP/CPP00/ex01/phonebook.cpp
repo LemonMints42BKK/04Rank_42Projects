@@ -6,37 +6,25 @@
 /*   By: pnopjira <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 05:42:39 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/08/29 20:21:56 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/09/03 00:02:35 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
 
-int main(void)
-{
-    std::cout << ">>>>THIS IS PHONEBOOK<<<<" << std::endl;
-    std::cout << "Enter the COMMAND" << std::endl;
-    std::cout << "# ADD to contact list." << std::endl;
-    std::cout << "# SEARCH to display the contact list" << std::endl;
-    std::cout << "# EXIT program." << std::endl;
+#include "phonebook.hpp"
 
-    std::string cmd = "";
-    while (cmd != "EXIT")
-    {
-            std::cout << "Enter the COMMAND : ";
-            std::getline(std::cin, cmd);
-            if (cmd == "EXIT")
-                exit(0);
-            else if (cmd == "ADD")
-            {
-                std::cout << cmd << std::endl;
-            }
-            else if (cmd == "SEARCH")
-            {
-                std::cout << cmd << std::endl;
-            }
-    }
-
-	
-    return (0);
+Contact::Contact(void) {
+	// std::cout << "Constructor called" << std::endl;
+	return;
 }
+
+Contact::~Contact(void) {
+	// std::cout << "Destructor called" << std::endl;
+	return;
+}
+
+// void	Contact::set_first_name(std::string first_name)
+// {
+// 	// this->_first_name = first_name;
+// }
