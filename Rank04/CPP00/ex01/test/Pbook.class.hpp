@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 20:09:10 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/12 21:05:59 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/09/13 08:35:03 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,9 @@ public:
 	~Contact(void);
 
 	void add_contact(void);
+	char *text_align(char *str);
+	void search_contact(void);
+	// void print_contact(void);
 private:
 	/* data */
 };
