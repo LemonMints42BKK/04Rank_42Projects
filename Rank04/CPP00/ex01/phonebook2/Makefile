@@ -5,28 +5,30 @@
 #                                                     +:+ +:+         +:+      #
 #    By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/13 21:50:10 by pnopjira          #+#    #+#              #
-#    Updated: 2023/09/16 00:03:50 by pnopjira         ###   ########.fr        #
+#    Created: 2023/08/14 05:41:44 by pnopjira          #+#    #+#              #
+#    Updated: 2023/09/17 15:30:14 by pnopjira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Accout
-CC = g++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Account.cpp tests.cpp
-OJB = $(SRCS:.cpp=.o)
+SRC			= Phonebook.cpp Contact.class.cpp Phonebook.class.cpp
+OBJ			= $(SRC:%.cpp=%.o)
+CC			= g++
+RM 			= rm -rf
+CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 
+
+NAME		= phonebook
 
 all: $(NAME)
 
-$(NAME): $(OJB)
-	$(CC) $(CFLAGS) $(OJB) -o $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 clean:
-	rm -f $(OJB)
+	$(RM) $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
-re: fclean all
+re: fclean $(NAME)
 
 .PHONY: all clean fclean re
