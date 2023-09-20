@@ -6,18 +6,17 @@
 #    By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/13 16:06:07 by pnopjira          #+#    #+#              #
-#    Updated: 2023/09/20 09:34:40 by pnopjira         ###   ########.fr        #
+#    Updated: 2023/09/20 16:48:26 by pnopjira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC			= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRC			= main.cpp Harl.cpp
 OBJ			= $(SRC:.cpp=.o)
 CC			= c++
 RM 			= rm -rf
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 
-#CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 -g -fsanitize=leak
 
-NAME		= violence
+NAME		= harlFilter
 
 all: $(NAME)
 
