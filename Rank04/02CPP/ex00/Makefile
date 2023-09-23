@@ -6,7 +6,7 @@
 #    By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/13 16:06:07 by pnopjira          #+#    #+#              #
-#    Updated: 2023/09/21 07:02:06 by pnopjira         ###   ########.fr        #
+#    Updated: 2023/09/23 01:13:40 by pnopjira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ RM 			= rm -rf
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 
 # CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 -g -fsanitize=leak
 
-NAME		= harlFilter
+NAME		= fixed
 
 all: $(NAME)
 

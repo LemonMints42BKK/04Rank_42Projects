@@ -20,10 +20,16 @@
 class Fixed
 {
     private:
-        int _FixedPointValue;
+        int                 _FixedValue;
+        static const int    _FractionalBits = 8;
     public:
-        Fixed(/* args */);
-        ~Fixed();
+        Fixed(void);
+        Fixed (Fixed const &src);
+        ~Fixed(void);
+
+        Fixed&  operator=(Fixed const &rhs);
+        int     getRawBits(void) const;
+        void    setRawBits(int const raw); 
 };
 
 #endif
