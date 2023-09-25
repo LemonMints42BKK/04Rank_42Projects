@@ -6,17 +6,17 @@
 #    By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/13 16:06:07 by pnopjira          #+#    #+#              #
-#    Updated: 2023/09/23 10:58:33 by pnopjira         ###   ########.fr        #
+#    Updated: 2023/09/24 09:35:33 by pnopjira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC			= main.cpp Fixed.cpp #bsp.cpp Point.cpp
+SRC			= main.cpp Fixed.cpp bsp.cpp Point.cpp
 OBJ			= $(SRC:.cpp=.o)
 CC			= c++
 RM 			= rm -rf
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 
 
-NAME		= fixed02
+NAME		= bsp
 
 all: $(NAME)
 
