@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:37:55 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/26 15:11:42 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/09/28 02:55:08 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ class   ClapTrap
         int _energyPoints;
         int _attackDamage;
     public:
-        ClapTrap();
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap &other);
         ClapTrap &operator=(const ClapTrap &other);

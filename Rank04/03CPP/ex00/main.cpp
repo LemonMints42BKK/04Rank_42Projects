@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:37:57 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/26 15:24:21 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/09/28 03:33:02 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,26 @@ int main(void)
 {
     ClapTrap a("Me");
     ClapTrap b("You");
-    ClapTrap c;
-    ClapTrap d(a);
 
     a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
-    a.attack("You");
 
-    b.takeDamage(9);
-    b.beRepaired(10);
+    b.takeDamage(0);
+    b.beRepaired(1);
     b.attack("Me");
-
-    a.takeDamage(10);
-    a.attack("You");
-    a.beRepaired(10);
+    a.takeDamage(0);
+    // a.takeDamage(10);
+    a.beRepaired(1);
+    
+    ClapTrap d(b);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.beRepaired(1);
+    d.attack("YOU");
     return 0;
 }
