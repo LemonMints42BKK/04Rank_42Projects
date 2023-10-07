@@ -1,0 +1,10 @@
+LINKED LIST
+A list constructed with pointers
+
+Use *to reference pointers
+# node *temp= new node;
+Use -> when assigning data to pointers
+# temp->data = value;
+
+STRUCTS
+Class without methods

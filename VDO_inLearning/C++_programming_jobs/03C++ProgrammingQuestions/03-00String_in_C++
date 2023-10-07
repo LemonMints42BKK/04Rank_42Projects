@@ -1,0 +1,11 @@
+Verbal: Can you talk about it?
+Technical: Can you implement it in code?
+
+String: Stores a sequence of charactor.
+C:      char[n]-an array of charactors.
+C++:    char[n]-from the cstring library.
+        string- from the std library.
+
+# strcmp()-used for comparing string in C
+# strcpy()-used for copying string in C
+
