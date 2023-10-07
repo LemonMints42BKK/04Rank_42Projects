@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/07 11:47:55 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/10/07 12:36:29 by pnopjira         ###   ########.fr       */
+/*   Created: 2023/10/07 13:03:10 by pnopjira          #+#    #+#             */
+/*   Updated: 2023/10/07 13:53:26 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalpha(int c)
+#include "libft.h"
+
+void*   ft_memset(void *s, int c, size_t  n)
 {
-    return ((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'));
+    unsigned char *ptr;
+    
+    ptr = s;
+    while (n-- > 0)
+        *ptr++ = c;
+    return (s);    
 }
