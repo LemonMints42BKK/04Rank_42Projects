@@ -2,7 +2,7 @@
 <html>
   <head></head>
   <body>
-    <h2>cub3D-ภาคบังคับ</h2>
+    <h2>cub3D-ภาคบังคับ <a href="https://github.com/LemonMints42BKK/42Projects/blob/1360cedce734dfe0ab88df36f24d7280e82f67ac/Rank04/cub3D/en.subject.pdf">English</a></h2>
     <p> พฤษจิกายน ๒๕๖๖ <p>
     <div>
       <ul>
@@ -46,6 +46,7 @@
     </div>
     <div>
       <h2>cub3D-ภาคเสริม</h2>
+      <p style="color:Tomato;">UNDER CONSTRUCTION</p>
     </div>
   </body>
 </html>
