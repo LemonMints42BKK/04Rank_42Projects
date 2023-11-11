@@ -47,7 +47,7 @@
                 </ul>
               </li>
               <li>ตัวอย่างของไฟล์ฉากภาคบังคับ .cub เบื้องต้น:<br>
-                <img alt=".cub exsample" src="">
+                <img alt=".cub exsample" src="https://github.com/LemonMints42BKK/42Projects/blob/f82b670668eaab46ba87765120a1903269621919/Rank04/cub3D/Screen%20Shot%202566-11-11%20at%2015.02.58.png">
               </li>
               <li>หากพบการกำหนดค่าที่ไม่ถูกต้องใดๆ ในไฟล์ โปรแกรมจะต้องออกอย่างถูกต้องและส่งกลับ "Error\n" ตามด้วยข้อความแสดงข้อผิดพลาดที่ชัดเจนที่คุณเลือก</li>
           </ul>
