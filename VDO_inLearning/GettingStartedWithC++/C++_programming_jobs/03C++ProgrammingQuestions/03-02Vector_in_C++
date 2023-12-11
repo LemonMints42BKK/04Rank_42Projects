@@ -1,2 +1,0 @@
-Vector(template class that contains an array in C++ and unavilable in C)
-: like Array, but can increase and reduce their size dynamically.
