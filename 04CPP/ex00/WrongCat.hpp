@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 02:07:23 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/10/02 02:08:19 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:05:56 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@
 class WrongCat: public WrongAnimal
 {
     public:
-        WrongCat();
+        WrongCat(void);
         WrongCat(WrongCat const &other);
-       ~WrongCat();
+       ~WrongCat(void);
 
         WrongCat &operator=(WrongCat const &other);
 
-        void makeSound() const;
+        void makeSound(void) const;
 };
 
 #endif

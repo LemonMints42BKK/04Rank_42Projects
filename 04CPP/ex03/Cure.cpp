@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 19:48:29 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/12/06 13:28:02 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:36:43 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ AMateria* Cure::clone() const{
 }
 
 void Cure::use(ICharacter & target){
-	std::cout << "* heals "<< target.getName() << "’s wounds *" << std::endl;
+	std::cout << GREEN"* heals "<< target.getName() << "’s wounds *"RESET << std::endl;
 }

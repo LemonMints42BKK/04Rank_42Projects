@@ -6,16 +6,16 @@
 #    By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/30 12:31:05 by pnopjira          #+#    #+#              #
-#    Updated: 2023/12/06 12:07:58 by pnopjira         ###   ########.fr        #
+#    Updated: 2023/12/06 20:19:01 by pnopjira         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= interface_recap
 SRC			= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 OBJ			= $(SRC:.cpp=.o)
-CC			= clang++
+CC			= c++
 RM 			= rm -rf
-CPPFLAGS	= -W -Wall -Werror -std=c++98 -g
+CPPFLAGS	= -Wall -Werror -std=c++98 -g
 
 all: $(NAME)
 

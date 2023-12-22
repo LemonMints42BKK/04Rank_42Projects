@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 13:08:47 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/09/30 19:52:04 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 20:54:53 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Animal::Animal(): _type("undefined"){
     std::cout << GREEN << "Animal" << RESET << " type" << std::endl;
 }
 
-Animal::Animal(std::string type): _type(type){
+Animal::Animal(std::string const &type): _type(type){
     std::cout << GREEN << "Animal"<< RESET << " type " << this->_type << std::endl;
 }
 
@@ -27,7 +27,7 @@ Animal::Animal(Animal const &other){
     *this = other;
 }
 
-Animal::~Animal(){
+Animal::~Animal(void){
     std::cout << GREEN << "Animal" << RESET <<" Destructor" << std::endl;
 }
 
@@ -37,7 +37,7 @@ Animal &Animal::operator=(Animal const &other){
     return (*this);
 }
 
-std::string Animal::getType() const{
+std::string const & Animal::getType(void) const{
     return (this->_type);
 }
 

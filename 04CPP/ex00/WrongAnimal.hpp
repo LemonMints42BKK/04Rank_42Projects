@@ -28,14 +28,14 @@ class WrongAnimal
     protected:
         std::string _type;
     public:
-        WrongAnimal();
-        WrongAnimal(std::string type);
-        WrongAnimal(WrongAnimal const &other);
-        ~WrongAnimal();
+        WrongAnimal(void);
+        WrongAnimal(std::string const & type);
+        WrongAnimal(WrongAnimal const & other);
+        ~WrongAnimal(void);
 
         WrongAnimal &operator=(WrongAnimal const &other);
-        void makeSound() const;
-        std::string getType() const;
+        void makeSound(void) const;
+        std::string const & getType(void) const;
 };
 
 #endif

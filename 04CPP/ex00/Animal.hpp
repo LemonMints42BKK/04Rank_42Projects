@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 12:50:22 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/10/01 22:24:19 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 20:58:19 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ class Animal
     protected:
         std::string _type;
     public:
-        Animal();
-        Animal(std::string type);
-        Animal(Animal const &other);
-        ~Animal();
+        Animal(void);
+        Animal(std::string const & type);
+        Animal(Animal const & other);
+        virtual ~Animal(void);
 
-        Animal &operator=(Animal const &other);
-        virtual void makeSound() const;
-        std::string getType() const;
+        Animal &operator=(Animal const & other);
+        virtual void makeSound(void) const;
+        std::string const & getType(void) const;
 };
 
 #endif

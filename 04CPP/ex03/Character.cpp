@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 21:14:30 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/12/06 13:26:26 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 19:43:07 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ void Character::use(int idx, ICharacter& target){
 		if (this->_inventory[idx])
 			this->_inventory[idx]->use(target);
 		else
-			std::cout << "No Materia in this inventory" << std::endl;
+			std::cout << RED"No Materia in this inventory"RESET << std::endl;
 	} else
-		std::cout << "nothing in inventory slot index [" << idx << "]"  << std::endl;
+		std::cout << RED"nothing in inventory slot index [" << idx << "]"RESET  << std::endl;
 }

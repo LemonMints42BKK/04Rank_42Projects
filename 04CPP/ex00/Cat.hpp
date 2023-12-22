@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 22:18:49 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/10/01 22:21:39 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:00:11 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@
 class Cat: public Animal
 {
     public:
-        Cat();
+        Cat(void);
         Cat(Cat const &other);
-       ~Cat();
+       ~Cat(void);
 
         Cat &operator=(Cat const &other);
-
-        void makeSound() const;
+        void makeSound(void) const;
 };
 
 #endif

@@ -12,22 +12,22 @@
 
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal(): _type("undefined"){
+WrongAnimal::WrongAnimal(void): _type("undefined"){
     std::cout << GREEN << "WrongAnimal" << RESET << " type" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(std::string type): _type(type){
+WrongAnimal::WrongAnimal(std::string const &type): _type(type){
     std::cout << GREEN << "WrongAnimal"<< RESET << " type " << this->_type << std::endl;
 }
 
-WrongAnimal::WrongAnimal(WrongAnimal const &other){
+WrongAnimal::WrongAnimal(WrongAnimal const & other){
     std::cout << GREEN << "WrongAnimal" << RESET << " is Copy" << std::endl;
     if(this != &other)
         this->_type = other._type;
     *this = other;
 }
 
-WrongAnimal::~WrongAnimal(){
+WrongAnimal::~WrongAnimal(void){
     std::cout << GREEN << "WrongAnimal" << RESET <<" Destructor" << std::endl;
 }
 
@@ -37,10 +37,10 @@ WrongAnimal &WrongAnimal::operator=(WrongAnimal const &other){
     return (*this);
 }
 
-std::string WrongAnimal::getType() const{
+std::string const & WrongAnimal::getType() const{
     return (this->_type);
 }
 
-void WrongAnimal::makeSound() const{
+void WrongAnimal::makeSound(void) const{
     std::cout << YELLOW << "........." << RESET << std::endl;
 }

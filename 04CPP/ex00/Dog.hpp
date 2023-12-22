@@ -6,7 +6,7 @@
 /*   By: pnopjira <65420071@kmitl.ac.th>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 22:20:26 by pnopjira          #+#    #+#             */
-/*   Updated: 2023/10/01 22:21:20 by pnopjira         ###   ########.fr       */
+/*   Updated: 2023/12/06 21:00:38 by pnopjira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@
 class Dog: public Animal
 {
     public:
-        Dog();
+        Dog(void);
         Dog(Dog const &other);
-        ~Dog();
+        ~Dog(void);
 
         Dog &operator=(Dog const &other);
-
-        void makeSound() const;
+        void makeSound(void) const;
 };
 
 #endif

@@ -13,7 +13,7 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(): WrongAnimal("WrongCat"){
+WrongCat::WrongCat(void): WrongAnimal("WrongCat"){
     std::cout << "Type "  << GREEN << _type << RESET << " was born" << std::endl;
 }
 
@@ -24,7 +24,7 @@ WrongCat::WrongCat(WrongCat const &other){
     *this = other;
 }
 
-WrongCat::~WrongCat(){
+WrongCat::~WrongCat(void){
     std::cout << GREEN << this->_type << RESET << " is dead" << std::endl;
 }
 
@@ -34,6 +34,6 @@ WrongCat &WrongCat::operator=(WrongCat const &other){
     return (*this);
 }
 
-void WrongCat::makeSound() const{
+void WrongCat::makeSound(void) const{
     std::cout << YELLOW << "Meow Meow" << RESET << std::endl;
 }
